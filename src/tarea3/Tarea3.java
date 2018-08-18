@@ -18,7 +18,7 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
         int opcion = 0;
         Scanner entrada = new Scanner(System.in);
         
-                                                                  //menu principal
+        do{                                                          //menu principal
         System.out.println("[IPC]Tarea3_201700648");
         System.out.println("");
         System.out.println("1.Usuario");
@@ -35,12 +35,51 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
             System.out.println("3.Mostrar Usuarios descendentes");
             System.out.println("4.Menu principal"); 
                     opcion = entrada.nextInt();
+                    
+                    switch(opcion){
+                        case 1://Ingresar Usuario
+                            String usuario = "";
+                            Scanner usur = new Scanner(System.in);
+                            System.out.println("");
+                            
+
+                            
+                            String usuarios[] = new String[5]; //define el numero de casillas del vector dinamico con[]
+        
+        for(int i=0; i<5; i++){
+        System.out.println("Porfavor dame el usuario #" + (i+1));
+        usuarios[i] = usur.nextLine(); //define el valor(usuarios) del vector dinamico
+        }
+        for(int i=0; i<5; i++){
+            System.out.print("["+ usuarios[i] +"]"); //salida a pantalla matriz
+        }
+                            
+                     break; 
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                        default:
+                            System.out.println("opcion erronia debe ser de 1 - 4");
+                            break;
+                    } 
+                   
             break;
+            
+            
+            
+            
+            
+            
+            
+            
+            
         case 2://Menu Contador de digitos repetidos
             System.out.println("1.Ingresar numero");
             System.out.println("2.Ingresar numero a buscar");
             System.out.println("3.Mostrar numero de digitos");
-            System.out.println("4.Menu principal");
+            System.out.println("0.Menu principal");
                     opcion = entrada.nextInt();
             break;        
         case 3://Menu Tres numeros de mayor a menor
@@ -60,6 +99,7 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
                 System.out.println("opcion erronia debe ser de 1 - 5");
             break;
             }//fin switch menu principal
+        }while(opcion==0);
           
-    }//Finn Tarea3
+    }//Finn Tarea3-----------------------------------------------------------.
 }
