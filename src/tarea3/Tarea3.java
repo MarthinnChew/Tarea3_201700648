@@ -29,11 +29,13 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
         opcion = entrada.nextInt();
         
         switch(opcion){
-        case 1:// Menu Usuario
+        
+            ///////////                   MENU USUARIOS
+            case 1:
             System.out.println("1.Ingresar Usuario");
             System.out.println("2.Mostrar Usuarios ascendente");
             System.out.println("3.Mostrar Usuarios descendentes");
-            System.out.println("4.Menu principal"); 
+            System.out.println("0.Menu principal"); 
                     opcion = entrada.nextInt();
                     
                     switch(opcion){
@@ -47,30 +49,45 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
                             String usuarios[] = new String[5]; //define el numero de casillas del vector dinamico con[]
         
         for(int i=0; i<5; i++){
-        System.out.println("Porfavor dame el usuario #" + (i+1));
+        System.out.println("Ingresar usuario #" + (i+1));
         usuarios[i] = usur.nextLine(); //define el valor(usuarios) del vector dinamico
         }
-        for(int i=0; i<5; i++){
-            System.out.print("["+ usuarios[i] +"]"); //salida a pantalla matriz
-        }
+        System.out.println("2. Mostrar Usuarios Ascendentes");
+        System.out.println("3. Mostrar Usuarios Descendentes");
+        opcion = entrada.nextInt();
+                                        switch(opcion){
+                                            case 2:
+                                    for(int i=0; i<5; i++){
+                                        System.out.println("["+ (i+1) +"." +  usuarios[i] +"]"); //salida a pantalla vector
+                                    }
+                                            break;
+
+                                            case 3:
+                                    for(int i=0; i<5; i++){
+                                        System.out.println("["+ (5-i) +"." +  usuarios[i] +"]"); //salida a pantalla vector
+                                    }
+                                            break;
+                                        }
                             
                      break; 
                         case 2:
+                            System.out.println("debe de ingresar usuarios primero");
                             break;
                         case 3:
+                            System.out.println("debe de ingresar usuarios primero");
                             break;
                         case 4:
                         default:
-                            System.out.println("opcion erronia debe ser de 1 - 4");
+                            System.out.println("opcion erronia debe ser de 0 - 2");
                             break;
-                    } 
+                    }
                    
             break;
             
             
             
             
-            
+            /////////          MENU CONTADOR DE DIGITOS
             
             
             
@@ -81,17 +98,31 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
             System.out.println("3.Mostrar numero de digitos");
             System.out.println("0.Menu principal");
                     opcion = entrada.nextInt();
-            break;        
+            break; 
+            
+            
+            ////////////////        MENU TRES NUMEROS DE MAYOR A MENOR
+            
+            
         case 3://Menu Tres numeros de mayor a menor
             System.out.println("1.Ingresar numero");
             System.out.println("2.Mostrar ordenados");
             System.out.println("3.Menu principal");
                     opcion = entrada.nextInt();
             break;       
+            
+            
+            ///////////             MENU CALCULAR PROMEDIO
+            
+            
          case 4://Menu Calcular promedio(4notas de 6 estudiantes)
                 System.out.println("1.opcion");
                 System.out.println("2.opcion");
             break;    
+            
+            
+            /////////////////                   SALIR
+            
          case 5://5.Salir
                 System.out.println("finalizado");
          case 6:
@@ -101,5 +132,5 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
             }//fin switch menu principal
         }while(opcion==0);
           
-    }//Finn Tarea3-----------------------------------------------------------.
+    }//Fin Tarea3-----------------------------------------------------------.
 }
