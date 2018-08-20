@@ -20,12 +20,13 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
         
         do{                                                          //menu principal
         System.out.println("[IPC]Tarea3_201700648");
-        System.out.println("");
+        System.out.println("___________________________________________________________________________________________");
         System.out.println("1.Usuario");
         System.out.println("2.Contador de digitos repetidos");
         System.out.println("3.Tres números de mayor a menor");
         System.out.println("4.Calcular promedio");
-        System.out.println("5.Salir");                              //Aqui termina el menu principal
+        System.out.println("5.Salir");
+        System.out.println("___________________________________________________________________________________________");//Aqui termina el menu principal
         opcion = entrada.nextInt();
         
         switch(opcion){
@@ -225,76 +226,77 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
                                 int p1 = 0, p2=0, p3=0, p4=0, p5=0, p6=0;
 
                                     ////////////primer promedio
-                                        System.out.println("Ingrese el id");
+                                        System.out.println("-----Ingrese el id-----");
                                         id = entrada.nextInt();
-                                        System.out.println("Ingrese la primera nota");
+                                        System.out.print("Ingrese la primera nota:");
                                         n1 = entrada.nextInt();
-                                        System.out.println("Ingrese la segunda nota");
+                                        System.out.print("Ingrese la segunda nota:");
                                         n2 = entrada.nextInt();
-                                        System.out.println("Ingrese la tercer nota");
+                                        System.out.print("Ingrese la tercer nota:");
                                         n3 = entrada.nextInt();
-                                        System.out.println("Ingrese la cuarta nota");
+                                        System.out.print("Ingrese la cuarta nota:");
                                         n4 = entrada.nextInt();
                                     ////////////segundo promedio    
-                                        System.out.println("Ingrese el segundo id");
+                                        System.out.println("-----Ingrese el segundo id-----");
                                         id_2 = entrada.nextInt();
-                                        System.out.println("Ingrese la primera nota");
+                                        System.out.print("Ingrese la primera nota:");
                                         n1_2 = entrada.nextInt();
-                                        System.out.println("Ingrese la segunda nota");
+                                        System.out.print("Ingrese la segunda nota:");
                                         n2_2 = entrada.nextInt();
-                                        System.out.println("Ingrese la tercer nota");
+                                        System.out.print("Ingrese la tercer nota:");
                                         n3_2 = entrada.nextInt();
-                                        System.out.println("Ingrese la cuarta nota");
+                                        System.out.print("Ingrese la cuarta nota:");
                                         n4_2 = entrada.nextInt();
                                     ////////////tercer promedio    
-                                        System.out.println("Ingrese el tercer id");
+                                        System.out.println("-----Ingrese el tercer id-----");
                                         id_3 = entrada.nextInt();
-                                        System.out.println("Ingrese la primera nota");
+                                        System.out.print("Ingrese la primera nota:");
                                         n1_3 = entrada.nextInt();
-                                        System.out.println("Ingrese la segunda nota");
+                                        System.out.print("Ingrese la segunda nota:");
                                         n2_3 = entrada.nextInt();
-                                        System.out.println("Ingrese la tercer nota");
+                                        System.out.print("Ingrese la tercer nota:");
                                         n3_3 = entrada.nextInt();
-                                        System.out.println("Ingrese la cuarta nota");
+                                        System.out.print("Ingrese la cuarta nota:");
                                         n4_3 = entrada.nextInt();
                                     ////////////cuarto promedio    
-                                        System.out.println("Ingrese el tercer id");
+                                        System.out.println("-----Ingrese el cuarto id-----");
                                         id_4 = entrada.nextInt();
-                                        System.out.println("Ingrese la primera nota");
+                                        System.out.print("Ingrese la primera nota:");
                                         n1_4 = entrada.nextInt();
-                                        System.out.println("Ingrese la segunda nota");
+                                        System.out.print("Ingrese la segunda nota:");
                                         n2_4 = entrada.nextInt();
-                                        System.out.println("Ingrese la tercer nota");
+                                        System.out.print("Ingrese la tercer nota:");
                                         n3_4 = entrada.nextInt();
-                                        System.out.println("Ingrese la cuarta nota");
+                                        System.out.print("Ingrese la cuarta nota:");
                                         n4_4 = entrada.nextInt();
                                     ////////////quinto promedio    
-                                        System.out.println("Ingrese el tercer id");
+                                        System.out.println("-----Ingrese el quinto id-----");
                                         id_5 = entrada.nextInt();
-                                        System.out.println("Ingrese la primera nota");
+                                        System.out.print("Ingrese la primera nota:");
                                         n1_5 = entrada.nextInt();
-                                        System.out.println("Ingrese la segunda nota");
+                                        System.out.print("Ingrese la segunda nota:");
                                         n2_5 = entrada.nextInt();
-                                        System.out.println("Ingrese la tercer nota");
+                                        System.out.print("Ingrese la tercer nota:");
                                         n3_5 = entrada.nextInt();
-                                        System.out.println("Ingrese la cuarta nota");
+                                        System.out.print("Ingrese la cuarta nota:");
                                         n4_5 = entrada.nextInt();
                                     ////////////secto promedio    
-                                        System.out.println("Ingrese el tercer id");
+                                        System.out.println("-----Ingrese el sexto id-----");
                                         id_6 = entrada.nextInt();
-                                        System.out.println("Ingrese la primera nota");
+                                        System.out.print("Ingrese la primera nota:");
                                         n1_6 = entrada.nextInt();
-                                        System.out.println("Ingrese la segunda nota");
+                                        System.out.print("Ingrese la segunda nota:");
                                         n2_6 = entrada.nextInt();
-                                        System.out.println("Ingrese la tercer nota");
+                                        System.out.print("Ingrese la tercer nota:");
                                         n3_6 = entrada.nextInt();
-                                        System.out.println("Ingrese la cuarta nota");
+                                        System.out.print("Ingrese la cuarta nota:");
                                         n4_6 = entrada.nextInt();
                                         
                                             int matriz[][]= new int[6][6];  // matriz[filas j]x[columnas i] 
 
                                             for(int j=0; j < 6; j++){               //llena de izquierda a derecha de fila en fila
                                             for(int i=0; i < 6; i++){
+                                                // primer promedio en matriz
                                                 matriz[0][0] = id;
                                                 matriz[0][1] = n1;
                                                 matriz[0][2] = n2;
@@ -302,7 +304,7 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
                                                 matriz[0][4] = n4;
                                                 p1 = (n1 + n2 + n3 + n4)/4;
                                                 matriz[0][5] = p1;
-                                                
+                                                // segundo promedio en matriz
                                                 matriz[1][0] = id_2;
                                                 matriz[1][1] = n1_2;
                                                 matriz[1][2] = n2_2;
@@ -310,7 +312,7 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
                                                 matriz[1][4] = n4_2;
                                                 p2 = (n1_2 + n2_2 + n3_2 + n4_2)/4;
                                                 matriz[1][5] = p2;
-                                                
+                                                // tercer promedio en matriz
                                                 matriz[2][0] = id_3;
                                                 matriz[2][1] = n1_3;
                                                 matriz[2][2] = n2_3;
@@ -318,16 +320,46 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
                                                 matriz[2][4] = n4_3;
                                                 p3 = (n1_3 + n2_3 + n3_3 + n4_3)/4;
                                                 matriz[2][5] = p3;
+                                                // cuatro promedio en matriz
+                                                matriz[3][0] = id_4;
+                                                matriz[3][1] = n1_4;
+                                                matriz[3][2] = n2_4;
+                                                matriz[3][3] = n3_4;
+                                                matriz[3][4] = n4_4;
+                                                p4 = (n1_4 + n2_4 + n3_4 + n4_4)/4;
+                                                matriz[3][5] = p4;
+                                                // quinto promedio en matriz
+                                                matriz[4][0] = id_5;
+                                                matriz[4][1] = n1_5;
+                                                matriz[4][2] = n2_5;
+                                                matriz[4][3] = n3_5;
+                                                matriz[4][4] = n4_5;
+                                                p5 = (n1_5 + n2_5 + n3_5 + n4_5)/4;
+                                                matriz[4][5] = p5;
+                                                // sexto promedio en matriz
+                                                matriz[5][0] = id_6;
+                                                matriz[5][1] = n1_6;
+                                                matriz[5][2] = n2_6;
+                                                matriz[5][3] = n3_6;
+                                                matriz[5][4] = n4_6;
+                                                p6 = (n1_6 + n2_6 + n3_6 + n4_6)/4;
+                                                matriz[5][5] = p6;
                                                 
-                                                contador++;
-                                            System.out.print("["+ matriz[j][i]+"]");
+                                                contador++; 
+                                            System.out.print("["+"  "+ matriz[j][i]+"   "+"]");
                                             }
                                             System.out.println("");
 
                                         }
                                 break;
+                        case 2:
+                            System.out.print("Debe ingresar primero las notas");
+                            break;
+                        case 3:
+                        default:System.out.print("Opcion incorrecta debe elegir de 0-2");
                         }
-            break;    
+            break;
+            
             
             
             /////////////////                   SALIR
