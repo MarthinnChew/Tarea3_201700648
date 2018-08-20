@@ -98,7 +98,41 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
             System.out.println("3.Mostrar numero de digitos");
             System.out.println("0.Menu principal");
                     opcion = entrada.nextInt();
-            break; 
+                    
+                    switch(opcion){
+                        case 1:
+ 
+                            String cadena = "", cadenacorta = "";
+                                                int num_caracteres = 0, desde = 0, hasta = 0;
+                                                Scanner in = new Scanner(System.in);
+
+                                                System.out.print("Ingresa su numero:");
+                                                cadena = in.nextLine();
+
+                                                num_caracteres = cadena.length();       //vuelve el string en int
+
+                                                System.out.println("numero " + cadena + " posee " + num_caracteres + " numeros" );
+
+                                                System.out.println("Qué numero desea?:");
+                                                desde = in.nextInt();
+                                               
+                                                hasta = desde;
+
+                                                cadenacorta = cadena.substring(desde-1,(hasta+1)-1);         //substring acorta los caracteres
+                                                System.out.println("su numero es: "+ cadenacorta);
+                               break;
+                         case 2: 
+                                       
+                            System.out.println("Debe ingresar primero un numero");
+                                        
+                            break;
+                        case 3:
+                            
+                            System.out.println("Debe ingresar primero un numero");
+                            
+                         break;
+                    }
+            break;//case 2 
             
             
             ////////////////        MENU TRES NUMEROS DE MAYOR A MENOR
@@ -107,8 +141,65 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
         case 3://Menu Tres numeros de mayor a menor
             System.out.println("1.Ingresar numero");
             System.out.println("2.Mostrar ordenados");
-            System.out.println("3.Menu principal");
+            System.out.println("0.Menu principal");
                     opcion = entrada.nextInt();
+                    
+                    switch(opcion){
+                        case 1:
+                            int a = 0, b = 0, c =0;
+                            System.out.println("ingrese el primer número:");
+                            a = entrada.nextInt();
+                            System.out.println("ingrese el segundo número:");
+                            b = entrada.nextInt();
+                            System.out.println("ingrese el tercer número:");
+                            c = entrada.nextInt();
+                            
+                            if(a>b){
+                                if(b>c){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ a + "," + b + "," + c);
+                                }else if(c>b){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ a + "," + c + "," +  b);
+                                }
+                                
+                            }else if(b>a){
+                                if(a>c){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ b + "," + a + ","+ c);
+                                }else if(c>a){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ b + "," + c + ","+ a);
+                                }
+                            }else if(c>a){
+                                if(a>b){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ c + "," + a + ","  + b);
+                                }else if(b>a){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ c + "," + b +  "," + a);
+                                }
+                            }else if(a>c){
+                                if(c>b){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ a + "," + c + ","  + b);
+                                }else if(b>c){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ a + "," + b + ","  + c);
+                                }
+                            }else if(b>c){
+                                if(c>a){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ b + "," + c + ","  + a);
+                                }else if(a>c){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ b + "," + a + ","  + c);
+                                }
+                            }else if(c>b){
+                                if(b>a){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ c + "," + b+ ","  + a);
+                                }else if(a>b){
+                                    System.out.println("sus numeros en orden de mayor a menor: "+ c + "," + a + ","  + b);
+                                }
+                                    
+                            }
+                            break;
+                        case 2:
+                            
+                            break;
+                        
+                    }
+         
             break;       
             
             
