@@ -195,20 +195,138 @@ public class Tarea3 {//link GitHub:https://github.com/MarthinnChew/Tarea3_201700
                             }
                             break;
                         case 2:
-                            
+                            System.out.println("debe ingresar primero los numeros");
                             break;
-                        
+                            case 3:
+                            default:
+                                System.out.println("opcion erronia");
+                            break;  
                     }
-         
             break;       
-            
+                    
             
             ///////////             MENU CALCULAR PROMEDIO
             
             
-         case 4://Menu Calcular promedio(4notas de 6 estudiantes)
-                System.out.println("1.opcion");
-                System.out.println("2.opcion");
+         case 4://Menu Calcular promedio(4 notas de 6 estudiantes)
+                System.out.println("1.Ingresar notas");
+                System.out.println("2.Mostrar notas");
+                System.out.println("0.Menu Principal");
+                opcion = entrada.nextInt();
+                    switch(opcion){
+                        case 1:
+                                int id=0, id_2=0, id_3=0, id_4=0, id_5=0, id_6=0, contador = 1;
+                                int n1 = 0,   n2 = 0,   n3 = 0,   n4 = 0;
+                                int n1_2 = 0, n2_2 = 0, n3_2 =0, n4_2 = 0;
+                                int n1_3 = 0, n2_3 = 0, n3_3 =0, n4_3 = 0;
+                                int n1_4 = 0, n2_4 = 0, n3_4 =0, n4_4 = 0;
+                                int n1_5 = 0, n2_5 = 0, n3_5 =0, n4_5 = 0;
+                                int n1_6 = 0, n2_6 = 0, n3_6 =0, n4_6 = 0;
+                                int p1 = 0, p2=0, p3=0, p4=0, p5=0, p6=0;
+
+                                    ////////////primer promedio
+                                        System.out.println("Ingrese el id");
+                                        id = entrada.nextInt();
+                                        System.out.println("Ingrese la primera nota");
+                                        n1 = entrada.nextInt();
+                                        System.out.println("Ingrese la segunda nota");
+                                        n2 = entrada.nextInt();
+                                        System.out.println("Ingrese la tercer nota");
+                                        n3 = entrada.nextInt();
+                                        System.out.println("Ingrese la cuarta nota");
+                                        n4 = entrada.nextInt();
+                                    ////////////segundo promedio    
+                                        System.out.println("Ingrese el segundo id");
+                                        id_2 = entrada.nextInt();
+                                        System.out.println("Ingrese la primera nota");
+                                        n1_2 = entrada.nextInt();
+                                        System.out.println("Ingrese la segunda nota");
+                                        n2_2 = entrada.nextInt();
+                                        System.out.println("Ingrese la tercer nota");
+                                        n3_2 = entrada.nextInt();
+                                        System.out.println("Ingrese la cuarta nota");
+                                        n4_2 = entrada.nextInt();
+                                    ////////////tercer promedio    
+                                        System.out.println("Ingrese el tercer id");
+                                        id_3 = entrada.nextInt();
+                                        System.out.println("Ingrese la primera nota");
+                                        n1_3 = entrada.nextInt();
+                                        System.out.println("Ingrese la segunda nota");
+                                        n2_3 = entrada.nextInt();
+                                        System.out.println("Ingrese la tercer nota");
+                                        n3_3 = entrada.nextInt();
+                                        System.out.println("Ingrese la cuarta nota");
+                                        n4_3 = entrada.nextInt();
+                                    ////////////cuarto promedio    
+                                        System.out.println("Ingrese el tercer id");
+                                        id_4 = entrada.nextInt();
+                                        System.out.println("Ingrese la primera nota");
+                                        n1_4 = entrada.nextInt();
+                                        System.out.println("Ingrese la segunda nota");
+                                        n2_4 = entrada.nextInt();
+                                        System.out.println("Ingrese la tercer nota");
+                                        n3_4 = entrada.nextInt();
+                                        System.out.println("Ingrese la cuarta nota");
+                                        n4_4 = entrada.nextInt();
+                                    ////////////quinto promedio    
+                                        System.out.println("Ingrese el tercer id");
+                                        id_5 = entrada.nextInt();
+                                        System.out.println("Ingrese la primera nota");
+                                        n1_5 = entrada.nextInt();
+                                        System.out.println("Ingrese la segunda nota");
+                                        n2_5 = entrada.nextInt();
+                                        System.out.println("Ingrese la tercer nota");
+                                        n3_5 = entrada.nextInt();
+                                        System.out.println("Ingrese la cuarta nota");
+                                        n4_5 = entrada.nextInt();
+                                    ////////////secto promedio    
+                                        System.out.println("Ingrese el tercer id");
+                                        id_6 = entrada.nextInt();
+                                        System.out.println("Ingrese la primera nota");
+                                        n1_6 = entrada.nextInt();
+                                        System.out.println("Ingrese la segunda nota");
+                                        n2_6 = entrada.nextInt();
+                                        System.out.println("Ingrese la tercer nota");
+                                        n3_6 = entrada.nextInt();
+                                        System.out.println("Ingrese la cuarta nota");
+                                        n4_6 = entrada.nextInt();
+                                        
+                                            int matriz[][]= new int[6][6];  // matriz[filas j]x[columnas i] 
+
+                                            for(int j=0; j < 6; j++){               //llena de izquierda a derecha de fila en fila
+                                            for(int i=0; i < 6; i++){
+                                                matriz[0][0] = id;
+                                                matriz[0][1] = n1;
+                                                matriz[0][2] = n2;
+                                                matriz[0][3] = n3;
+                                                matriz[0][4] = n4;
+                                                p1 = (n1 + n2 + n3 + n4)/4;
+                                                matriz[0][5] = p1;
+                                                
+                                                matriz[1][0] = id_2;
+                                                matriz[1][1] = n1_2;
+                                                matriz[1][2] = n2_2;
+                                                matriz[1][3] = n3_2;
+                                                matriz[1][4] = n4_2;
+                                                p2 = (n1_2 + n2_2 + n3_2 + n4_2)/4;
+                                                matriz[1][5] = p2;
+                                                
+                                                matriz[2][0] = id_3;
+                                                matriz[2][1] = n1_3;
+                                                matriz[2][2] = n2_3;
+                                                matriz[2][3] = n3_3;
+                                                matriz[2][4] = n4_3;
+                                                p3 = (n1_3 + n2_3 + n3_3 + n4_3)/4;
+                                                matriz[2][5] = p3;
+                                                
+                                                contador++;
+                                            System.out.print("["+ matriz[j][i]+"]");
+                                            }
+                                            System.out.println("");
+
+                                        }
+                                break;
+                        }
             break;    
             
             
